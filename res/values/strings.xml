@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SuperTool</string>
+    <string name="title_section3">网络设置</string>
+    <string name="title_section2">重要SMS</string>
+    <string name="title_section1">快速锁屏</string> 
+    
+    <string name="menu_settings">Settings</string>
+    
+    <string name="super_tool_preferences_file">super_tool_preferences_file</string>
+    
+	<string name="lock_screen_action">super_tool_lockScreen</string>
+	
+	<string name="wifi_change_action">super_tool_wifi_change</string>
+	
+	<string name="lock_screen_preferences_tag">super_tool_lockScreen_tag</string>
+	
+	<string name="sms_receive_preferences_tag">super_tool_sms_receive_tag</string>
+	
+	<string name="network_preferences_tag">super_tool_sms_receive_tag</string>
+</resources>
