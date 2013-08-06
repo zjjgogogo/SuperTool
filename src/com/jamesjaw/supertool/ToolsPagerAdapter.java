@@ -1,12 +1,9 @@
 package com.jamesjaw.supertool;
 
 import android.content.Context;
-import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-
-import com.jamesjaw.supertool.SuperToolsActivity.DummySectionFragment;
 
 public class ToolsPagerAdapter extends FragmentPagerAdapter {
 
@@ -25,11 +22,9 @@ public class ToolsPagerAdapter extends FragmentPagerAdapter {
 
 		if (position == 0) {
 			
-			Fragment fragment = new LockScreenFragment();
-			return fragment;
-			
-		}
-		
+			Fragment fragment = new SwticherFragment();
+			return fragment; 
+		} 
 		else if(position == 1)
 		{
 			Fragment fragment = new MessageBoxFragement();
@@ -37,16 +32,10 @@ public class ToolsPagerAdapter extends FragmentPagerAdapter {
 		}
 		else if(position == 2)
 		{
-			Fragment fragment = new NetWorkFragment();
+			Fragment fragment = new NumberListFragment();
 			return fragment;
 		}
-		else {
-			Fragment fragment = new DummySectionFragment();
-			Bundle args = new Bundle();
-			args.putInt(DummySectionFragment.ARG_SECTION_NUMBER, position + 1);
-			fragment.setArguments(args);
-			return fragment;
-		}
+		return null;
 	}
 
 	@Override
@@ -59,11 +48,11 @@ public class ToolsPagerAdapter extends FragmentPagerAdapter {
 	public CharSequence getPageTitle(int position) {
 		switch (position) {
 		case 0:
-			return context.getString(R.string.title_section1).toUpperCase();
+			return context.getString(R.string.title_section1);
 		case 1:
-			return context.getString(R.string.title_section2).toUpperCase();
+			return context.getString(R.string.title_section2);
 		case 2:
-			return context.getString(R.string.title_section3).toUpperCase();
+			return context.getString(R.string.title_section3);
 		}
 		return null;
 	}

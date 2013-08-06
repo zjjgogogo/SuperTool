@@ -2,9 +2,9 @@
 <resources>
 
     <string name="app_name">SuperTool</string>
-    <string name="title_section3">网络设置</string>
-    <string name="title_section2">重要SMS</string>
-    <string name="title_section1">快速锁屏</string> 
+    <string name="title_section3">NumberList</string>
+    <string name="title_section2">SMSContent</string>
+    <string name="title_section1">Switchers</string> 
     
     <string name="menu_settings">Settings</string>
     
@@ -18,5 +18,5 @@
 	
 	<string name="sms_receive_preferences_tag">super_tool_sms_receive_tag</string>
 	
-	<string name="network_preferences_tag">super_tool_sms_receive_tag</string>
+	<string name="network_preferences_tag">super_tool_wifi_tag</string>
 </resources>

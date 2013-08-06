@@ -22,9 +22,7 @@ public class MessageItem implements java.io.Serializable
 	{
 		
 	}
-
-	 
-
+ 
 	public int getId() {
 		return id;
 	}

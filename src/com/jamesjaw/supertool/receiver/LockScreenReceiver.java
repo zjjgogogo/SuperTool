@@ -4,9 +4,9 @@ import android.app.admin.DeviceAdminReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-import com.jamesjaw.supertool.LockScreenManager;
 import com.jamesjaw.supertool.R;
 import com.jamesjaw.supertool.file.PreferencesSave;
+import com.jamesjaw.supertool.manager.LockScreenManager;
 import com.jamesjaw.supertool.utils.Debug;
  
 

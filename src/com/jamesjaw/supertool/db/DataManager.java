@@ -258,7 +258,7 @@ public class DataManager {
 		{
 			if(database != null)
 			{  
-				Cursor cs = Query0(tablename,null);
+				Cursor cs = Query_Origin(tablename,null);
 				if(cs != null)
 					{
 						num = cs.getCount();
@@ -423,7 +423,7 @@ public class DataManager {
 		return false;
 	}
 	
-	public Cursor Query0(String tablename,String wheresql)
+	public Cursor Query_Origin(String tablename,String wheresql)
 	{
 		return database.query(tablename, null, wheresql, null, null, null, null);	
 	}
@@ -443,7 +443,7 @@ public class DataManager {
 		{
 			if(database != null)
 			{
-				Cursor cs = Query0(tablename, wheresql);	
+				Cursor cs = Query_Origin(tablename, wheresql);	
 			    int max = cs.getCount();
 			    if(max > 0)
 			    {   

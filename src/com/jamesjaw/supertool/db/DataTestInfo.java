@@ -1,6 +1,6 @@
-package com.jamesjaw.mycode.demo.database;
+package com.jamesjaw.supertool.db;
 
-import com.jamesjaw.mycode.util.Debug;
+import com.jamesjaw.supertool.utils.Debug;
 
 public class DataTestInfo extends BaseData {
 
@@ -21,7 +21,7 @@ public class DataTestInfo extends BaseData {
 	@Override
 	public String getCreateSQL() {
 		// TODO Auto-generated method stub
-		Debug.e(getClass().getName(), BaseData.createTableSQL(TABLENAME, types, 1));
+		Debug.show(getClass().getName(), BaseData.createTableSQL(TABLENAME, types, 1));
 		return BaseData.createTableSQL(TABLENAME, types, 1) ;
 	}
 

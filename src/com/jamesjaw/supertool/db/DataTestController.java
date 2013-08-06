@@ -6,6 +6,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 
+import com.jamesjaw.supertool.data.Define;
 import com.jamesjaw.supertool.utils.Debug;
 
 public class DataTestController extends DataManager {
@@ -22,14 +23,15 @@ public class DataTestController extends DataManager {
 	public Cursor getData()
 	{
 //		data = new ArrayList<DataTestInfo>();
-		return super.Query0(DataTestInfo.TABLENAME, null);
+		return super.Query_Origin(DataTestInfo.TABLENAME, null);
 //		return data;
 	}
 	
+	 
 	public ArrayList<DataTestInfo> getData2()
 	{
 		data = new ArrayList<DataTestInfo>();
-		Cursor cs = super.Query0(DataTestInfo.TABLENAME, null);
+		Cursor cs = super.Query_Origin(DataTestInfo.TABLENAME, null);
 		int size = cs.getCount();
 		cs.moveToFirst();
 		for(int i = 0 ; i < size; i++)
@@ -46,7 +48,7 @@ public class DataTestController extends DataManager {
 	public Cursor getData(String wheresql)
 	{
 //		data = new ArrayList<DataTestInfo>();
-		return super.Query0(DataTestInfo.TABLENAME, wheresql);
+		return super.Query_Origin(DataTestInfo.TABLENAME, wheresql);
 //		return data;
 	}
 	

@@ -54,7 +54,7 @@ public class SMSObserver extends ContentObserver {
 				Uri.parse("content://sms/inbox"),
 				PROJECTION,
 //				" address=? and read=?", new String[] { "10086", "0" }, "date desc");
-				"read=?",new String[]{"1"},"date desc");
+				"read=?",new String[]{"0"},"date desc");
 		
 		cursor.moveToFirst();
 		
